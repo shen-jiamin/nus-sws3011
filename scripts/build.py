@@ -54,6 +54,10 @@ def prepare_dist_dir(dist: Path):
 
 def build_slide(md: Path, dist: Path, base: str):
     assert md.is_file(), f"{md}: File not found."
+
+    if not base.endswith("/"):
+        base += "/"
+
     cmd(*get_slidev(), "build", md, "--out", dist, "--base", base, "--download")
     with open(dist / "commit", "w") as fp:
         fp.write(get_commit_hash())
@@ -75,17 +79,20 @@ def check_changes(md: Path, dist: Path):
 
 if __name__ == "__main__":
     DIST = Path("dist")
-    BASE = Path("/slides")
-    SDIR = Path("src")
+    SDIR = Path(".")
 
     if os.getenv("CI"):
+        BASE = Path(os.getenv("GITHUB_REPOSITORY").split("/")[-1])
         assert DIST.exists(), f"{DIST}: Directory not found."
     else:
+        BASE = Path("dist")
         prepare_dist_dir(DIST)
 
     for md in SDIR.glob("*.md"):
-        rel = md.absolute().relative_to(SDIR).with_suffix("")
+        rel = md.relative_to(SDIR).with_suffix("")
         dist = DIST / rel
+        if not dist.is_dir():
+            dist.mkdir(parents=True)
 
         if check_changes(md, dist):
             build_slide(md, dist, str(BASE / rel))
