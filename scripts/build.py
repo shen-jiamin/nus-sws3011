@@ -55,6 +55,9 @@ def prepare_dist_dir(dist: Path):
 def build_slide(md: Path, dist: Path, base: str):
     assert md.is_file(), f"{md}: File not found."
 
+    if not base.startswith("/"):
+        base = "/" + base
+
     if not base.endswith("/"):
         base += "/"
 
