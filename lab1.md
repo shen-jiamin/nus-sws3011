@@ -26,6 +26,8 @@ Your PC should have booted.
 Please boot it up if not.
 Please reboot if it's in Windows.
 
+Lab instruction can be found on Canvas.
+
 ---
 
 # This Room
@@ -126,6 +128,7 @@ A simple lab.
 - **Part 2 - Trying out Virtual Machines**
   - If the PC is too slow, feel free to use your own laptop instead.
   - Remember to enable **Shared Clipboard** to allow you to copy the hash value.
+  - The link should be https://hugh.comp.nus.edu.sg/DOTA/lab1/gradeslab1-2.php
 - **Part 3 - Getting started in the lab with Windows**
   - Reboot. Select "**Windows Boot Manager**" on the "GNU GRUB" screen to boot into Windows.
   - There is no need to power off the PC when you finish your work. Just reboot it.
