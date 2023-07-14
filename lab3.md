@@ -34,3 +34,5 @@ canvasWidth: 800
 - Come to get the hardware part when you start trying Part 4. (no more available)
   - Please return it when you finish this part, or share it with your friends.
   - Input Device: `RTL2838UHIDIR`
+  - Do not run gqrx and the app you found simultaneously.
+  - You may need a proper freq & decoding protocol to decode the signal.
