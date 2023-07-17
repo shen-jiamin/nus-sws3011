@@ -4,8 +4,8 @@
     "build": "scripts/build.py"
   },
   "dependencies": {
-    "@slidev/cli": "^0.41.0",
-    "@slidev/theme-default": "*"
+    "@slidev/cli": "^0.42.0",
+    "@slidev/theme-default": "latest"
   },
   "devDependencies": {
     "playwright-chromium": "^1.22.2"
