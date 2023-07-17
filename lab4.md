@@ -61,3 +61,15 @@ canvasWidth: 800
   - URL1 should be posted on testx's comment page.
 
 ---
+
+# Tips
+
+- Part 1
+  - Please don't try to manipulate other's grades.
+    - In the event of an accidental manipulation, please alert your TA.
+- Part 2
+  - Work in pairs.
+  - Use the **secondary password** you were sent in the email.
+- Part 3
+  - The documentation is in the script, starting from line 367.
+  - https://www.cloudflare.com/en-gb/learning/ddos/ddos-attack-tools/slowloris/
