@@ -40,4 +40,13 @@ canvasWidth: 800
 
 # Lab 5
 
-- You're advised to do Part 1 & Part 3 first, and then reboot to Windows and try Part 2.
+If anyone wants to try Lab 3, we have 3 SDR adapters currently.
+
+- Environment:
+  - You can do Part 1 on any Ubuntu instance.
+  - Part 2 on Windows in the lab.
+  - Part 3 on SEEDs VM.
+- Part 1: _Extra information_ refers to anything in the certificate, except the public key and the signature.
+  - `openssl x509 -in xxx.crt -noout -text`
+- Part 3: Submitting a python script is fine as well. `t0123456.py`
+- **Due: Friday Late**
